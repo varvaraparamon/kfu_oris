@@ -1,0 +1,4 @@
+Python is popular for data science
+Java is widely used in enterprise applications
+C++ is powerful but complex
+Many developers love Python for its simplicity

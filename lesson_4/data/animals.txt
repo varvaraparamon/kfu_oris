@@ -1,0 +1,4 @@
+Cat is a domestic animal
+Dogs are loyal animals
+Elephant is the largest land animal
+Python is a type of snake, not just a programming language
