@@ -38,7 +38,7 @@ def handle_client(conn, addr):
             buffer += data
 
             lines = buffer.split("\n")
-            buffer = lines.pop()   # оставляем последнюю линию на след цикл, тк могла придти не полная информация
+            buffer = lines.pop()   
 
             for line in lines:
                 if not line.strip():
