@@ -36,7 +36,7 @@ class ChatWindow(QScrollArea):
         self.verticalScrollBar().setValue(self.verticalScrollBar().maximum())
 
     def clear_messages(self):
-        for i in reversed(range(self.layout.count() - 1)):
+        for i in range(self.layout.count() - 1, -1, -1):
             widget = self.layout.itemAt(i).widget()
             if widget:
                 widget.deleteLater()
