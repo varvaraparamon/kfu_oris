@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список элементов:</title>
+</head>
+<body>
+    <h1>Список элементов</h1>
+
+    {% if items %}
+        {% for x in items %}
+            <div>
+                <fieldset>
+                    <legend><b>{{ x.title }}</b></legend>
+                    <p><b>Описание:</b> {{ x.desc }}</p>
+                </fieldset>
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>Список пуст.</p>
+    {% endif %}
+    
+    <p><a href="{{ url_for('index') }}">Перейти на главную</a></p>
+</body>
+</html>

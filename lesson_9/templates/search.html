@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Поиск пользователя</title>
+</head>
+<body>
+    <h1>Поиск пользователя</h1>
+
+    <form method="get">
+        <p>
+            <label>Имя пользователя:</label>
+            <input type="text" name="username">
+        </p>
+        <p>
+            <button type="submit">Найти</button>
+        </p>
+    </form>
+
+    <p><a href="{{ url_for('index') }}">На главную</a></p>
+</body>
+</html>

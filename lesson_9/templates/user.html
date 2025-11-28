@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Профиль пользователя {{name}}:</title>
+</head>
+<body>
+    {% if name in users %}
+    <h1>Профиль пользователя <b><font color=#f21707>{{name}}</font></b></h1> 
+    {% else %}
+    <h1>Такого пользователя не существует</h1> 
+    {% endif %}
+
+    <p><a href="{{ url_for('items') }}">Перейти к списку</a></p>
+</body>
+</html>
